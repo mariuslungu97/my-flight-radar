@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM"],
+    "target": "ES6",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "dist",
+    "removeComments": true,
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "files": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

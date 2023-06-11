@@ -1,0 +1,24 @@
+{
+  "name": "my-flight-radar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "install": "concurrently --prefix-colors magenta,blue -n server,web \"yarn server:install\" \"yarn web:install\"",
+    "start": "concurrently --prefix-colors magenta,blue -n server,web \"yarn server:start\" \"yarn web:start\"",
+    "build": "concurrently --prefix-colors magenta,blue -n server,web \"yarn server:build\" \"yarn web:build\"",
+    "server:install": "cd server && yarn install",
+    "server:build": "cd server && yarn build",
+    "server:start": "cd server && yarn start",
+    "web:install": "cd web && yarn install",
+    "web:build": "cd web && yarn build",
+    "web:start": "cd web && yarn start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "@types/geojson": "^7946.0.10",
+    "geojson": "^0.5.0"
+  }
+}
